@@ -13,6 +13,7 @@ import BuffSDK
 class StreamViewController: LandscapeViewController {
     
     @IBOutlet weak var exitButton: UIButton!
+    @IBOutlet weak var buffView: UIView!
     
     private var player: AVPlayer!
     private var timeObserver: Any?
@@ -35,14 +36,25 @@ class StreamViewController: LandscapeViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let urlString = "https://hls-test.buffup.net/ataFootball/main.m3u8"
+        //let urlString = "https://hls-test.buffup.net/ataFootball/main.m3u8"
+        let urlString = "https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"
         if let videoURL = URL(string: urlString) {
             self.playVideoWithURL(url: videoURL)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                _ = self.buffView.startBuffing()
+                BuffSDK.shared.delegate = self
+            }
+            
         }
     }
     
     deinit {
         cleanPlayer()
+        self.buffView.stopBuffing()  // manage lifecycle
     }
       
     private func playVideoWithURL(url: URL) {
@@ -97,5 +109,16 @@ extension StreamViewController: UIGestureRecognizerDelegate {
             return false
         }
         return true
+    }
+}
+
+extension StreamViewController: BuffDelegate {
+    func didShowQuiz() {
+        buffView.isHidden = false
+        self.view.bringSubviewToFront(buffView)
+    }
+    func didDismissQuiz() {
+        self.view.sendSubviewToBack(buffView)
+        buffView.isHidden = true
     }
 }

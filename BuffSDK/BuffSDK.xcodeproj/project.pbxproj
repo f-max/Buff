@@ -7,18 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E617E33223AA9C5400BB7970 /* BuffSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E617E33123AA9C5400BB7970 /* BuffSDK.swift */; };
-		E6497CB525FA7E80004AFD12 /* CircularTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6497CB425FA7E80004AFD12 /* CircularTimer.swift */; };
-		E6497CBC25FA7EAC004AFD12 /* UIViewNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6497CBB25FA7EAC004AFD12 /* UIViewNibLoadable.swift */; };
-		E6497CC025FA7ECF004AFD12 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6497CBF25FA7ECF004AFD12 /* Bundle+Extensions.swift */; };
-		E6497CD425FA7FFE004AFD12 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6497CD325FA7FFE004AFD12 /* UIView+Extensions.swift */; };
+		B4258E40263194620017ED37 /* BuffSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E15263194610017ED37 /* BuffSDK.swift */; };
+		B4258E41263194620017ED37 /* BuffSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B4258E17263194610017ED37 /* BuffSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4258E43263194620017ED37 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E1D263194620017ED37 /* UIView+Extensions.swift */; };
+		B4258E44263194620017ED37 /* UIView+QuizShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E1E263194620017ED37 /* UIView+QuizShowable.swift */; };
+		B4258E45263194620017ED37 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E1F263194620017ED37 /* Bundle+Extensions.swift */; };
+		B4258E46263194620017ED37 /* BuffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E21263194620017ED37 /* BuffView.swift */; };
+		B4258E47263194620017ED37 /* UIViewNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E22263194620017ED37 /* UIViewNibLoadable.swift */; };
+		B4258E49263194620017ED37 /* CircularTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E24263194620017ED37 /* CircularTimer.swift */; };
+		B4258E4D263194620017ED37 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E2D263194620017ED37 /* Author.swift */; };
+		B4258E4E263194620017ED37 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E2E263194620017ED37 /* Image.swift */; };
+		B4258E4F263194620017ED37 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E2F263194620017ED37 /* Question.swift */; };
+		B4258E51263194620017ED37 /* BuffDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E31263194620017ED37 /* BuffDelegate.swift */; };
+		B4258E52263194620017ED37 /* ModelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E32263194620017ED37 /* ModelConstants.swift */; };
+		B4258E53263194620017ED37 /* Buffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E33263194620017ED37 /* Buffable.swift */; };
+		B4258E54263194620017ED37 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E34263194620017ED37 /* Answer.swift */; };
+		B4258E55263194620017ED37 /* BuffStartingResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E35263194620017ED37 /* BuffStartingResults.swift */; };
+		B4258E56263194620017ED37 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E36263194620017ED37 /* Quiz.swift */; };
+		B4258E57263194620017ED37 /* FetchingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E37263194620017ED37 /* FetchingError.swift */; };
+		B4258E58263194620017ED37 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E39263194620017ED37 /* APIConstants.swift */; };
+		B4258E59263194620017ED37 /* QuizFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E3B263194620017ED37 /* QuizFetcher.swift */; };
+		B4258E5A263194620017ED37 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E3C263194620017ED37 /* Fetcher.swift */; };
+		B4258E5B263194620017ED37 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E3E263194620017ED37 /* ResponseValidator.swift */; };
+		B4258E6E263198280017ED37 /* BuffResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E6D263198280017ED37 /* BuffResponse.swift */; };
+		B4258E7C26319F690017ED37 /* CatBreedsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E7826319F690017ED37 /* CatBreedsEndpoint.swift */; };
+		B4258E7D26319F690017ED37 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4258E7926319F690017ED37 /* Endpoint.swift */; };
+		B427372D26301126003D443A /* ResponseValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427372C26301126003D443A /* ResponseValidatorTests.swift */; };
+		B42AEB982631BA7B00FC88DD /* BuffView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4258E23263194620017ED37 /* BuffView.xib */; };
+		B475B04A262F77000047C8CC /* BuffsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475B049262F77000047C8CC /* BuffsEndpointTests.swift */; };
+		B48059782632EE9000BCF9AB /* UIViewController+QuizShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48059772632EE9000BCF9AB /* UIViewController+QuizShowable.swift */; };
+		B4EA9C172632B48000DF1DF0 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA9C152632B48000DF1DF0 /* QuestionTableViewCell.swift */; };
+		B4EA9C182632B48000DF1DF0 /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EA9C162632B48000DF1DF0 /* QuestionTableViewCell.xib */; };
+		B4EA9C1D2632B65900DF1DF0 /* AuthorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA9C1B2632B65900DF1DF0 /* AuthorTableViewCell.swift */; };
+		B4EA9C1E2632B65900DF1DF0 /* AuthorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EA9C1C2632B65900DF1DF0 /* AuthorTableViewCell.xib */; };
+		B4EA9C232632B67400DF1DF0 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA9C212632B67400DF1DF0 /* AnswerTableViewCell.swift */; };
+		B4EA9C302632D15D00DF1DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4258E19263194620017ED37 /* Assets.xcassets */; };
+		B4EA9C3B2632D83700DF1DF0 /* AnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EA9C3A2632D83700DF1DF0 /* AnswerTableViewCell.xib */; };
 		E6652CC52384247B00A1BF6D /* BuffSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6652CBB2384247B00A1BF6D /* BuffSDK.framework */; };
-		E6652CCA2384247B00A1BF6D /* BuffSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6652CC92384247B00A1BF6D /* BuffSDKTests.swift */; };
-		E6652CCC2384247B00A1BF6D /* BuffSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E6652CBE2384247B00A1BF6D /* BuffSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E66941C0249123810092ED98 /* BuffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66941BF249123810092ED98 /* BuffView.swift */; };
-		E66941C22491238E0092ED98 /* BuffView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66941C12491238E0092ED98 /* BuffView.xib */; };
-		E69E063F23CA3706007D3C2A /* Buff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E063E23CA3706007D3C2A /* Buff.storyboard */; };
-		E6EA7E1F23C645790052E901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EA7E1E23C645790052E901 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,21 +57,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E617E33123AA9C5400BB7970 /* BuffSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuffSDK.swift; sourceTree = "<group>"; };
-		E6497CB425FA7E80004AFD12 /* CircularTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTimer.swift; sourceTree = "<group>"; };
-		E6497CBB25FA7EAC004AFD12 /* UIViewNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewNibLoadable.swift; sourceTree = "<group>"; };
-		E6497CBF25FA7ECF004AFD12 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
-		E6497CD325FA7FFE004AFD12 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B4258E15263194610017ED37 /* BuffSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuffSDK.swift; sourceTree = "<group>"; };
+		B4258E17263194610017ED37 /* BuffSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuffSDK.h; sourceTree = "<group>"; };
+		B4258E19263194620017ED37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4258E1D263194620017ED37 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B4258E1E263194620017ED37 /* UIView+QuizShowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+QuizShowable.swift"; sourceTree = "<group>"; };
+		B4258E1F263194620017ED37 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		B4258E21263194620017ED37 /* BuffView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuffView.swift; sourceTree = "<group>"; };
+		B4258E22263194620017ED37 /* UIViewNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewNibLoadable.swift; sourceTree = "<group>"; };
+		B4258E23263194620017ED37 /* BuffView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuffView.xib; sourceTree = "<group>"; };
+		B4258E24263194620017ED37 /* CircularTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTimer.swift; sourceTree = "<group>"; };
+		B4258E27263194620017ED37 /* View+Quizzable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Quizzable.swift"; sourceTree = "<group>"; };
+		B4258E2D263194620017ED37 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		B4258E2E263194620017ED37 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B4258E2F263194620017ED37 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B4258E31263194620017ED37 /* BuffDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuffDelegate.swift; sourceTree = "<group>"; };
+		B4258E32263194620017ED37 /* ModelConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelConstants.swift; sourceTree = "<group>"; };
+		B4258E33263194620017ED37 /* Buffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buffable.swift; sourceTree = "<group>"; };
+		B4258E34263194620017ED37 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		B4258E35263194620017ED37 /* BuffStartingResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuffStartingResults.swift; sourceTree = "<group>"; };
+		B4258E36263194620017ED37 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		B4258E37263194620017ED37 /* FetchingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchingError.swift; sourceTree = "<group>"; };
+		B4258E39263194620017ED37 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		B4258E3B263194620017ED37 /* QuizFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFetcher.swift; sourceTree = "<group>"; };
+		B4258E3C263194620017ED37 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		B4258E3E263194620017ED37 /* ResponseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
+		B4258E3F263194620017ED37 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4258E6D263198280017ED37 /* BuffResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuffResponse.swift; sourceTree = "<group>"; };
+		B4258E7826319F690017ED37 /* CatBreedsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatBreedsEndpoint.swift; sourceTree = "<group>"; };
+		B4258E7926319F690017ED37 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B427372C26301126003D443A /* ResponseValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseValidatorTests.swift; sourceTree = "<group>"; };
+		B475B049262F77000047C8CC /* BuffsEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuffsEndpointTests.swift; sourceTree = "<group>"; };
+		B48059772632EE9000BCF9AB /* UIViewController+QuizShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+QuizShowable.swift"; sourceTree = "<group>"; };
+		B480597D2632EF8000BCF9AB /* README_sdk_users.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_sdk_users.md; sourceTree = "<group>"; };
+		B48059802632F1F900BCF9AB /* README_challengeReviewers.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_challengeReviewers.md; sourceTree = "<group>"; };
+		B4EA9C152632B48000DF1DF0 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		B4EA9C162632B48000DF1DF0 /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
+		B4EA9C1B2632B65900DF1DF0 /* AuthorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorTableViewCell.swift; sourceTree = "<group>"; };
+		B4EA9C1C2632B65900DF1DF0 /* AuthorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorTableViewCell.xib; sourceTree = "<group>"; };
+		B4EA9C212632B67400DF1DF0 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		B4EA9C3A2632D83700DF1DF0 /* AnswerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerTableViewCell.xib; sourceTree = "<group>"; };
 		E6652CBB2384247B00A1BF6D /* BuffSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BuffSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6652CBE2384247B00A1BF6D /* BuffSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuffSDK.h; sourceTree = "<group>"; };
-		E6652CBF2384247B00A1BF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6652CC42384247B00A1BF6D /* BuffSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuffSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6652CC92384247B00A1BF6D /* BuffSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuffSDKTests.swift; sourceTree = "<group>"; };
 		E6652CCB2384247B00A1BF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E66941BF249123810092ED98 /* BuffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuffView.swift; sourceTree = "<group>"; };
-		E66941C12491238E0092ED98 /* BuffView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuffView.xib; sourceTree = "<group>"; };
-		E69E063E23CA3706007D3C2A /* Buff.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buff.storyboard; sourceTree = "<group>"; };
-		E6EA7E1E23C645790052E901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,28 +121,159 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E6497CB825FA7E84004AFD12 /* Custom UI Elements */ = {
+		B4258E14263194610017ED37 /* BuffSDK */ = {
 			isa = PBXGroup;
 			children = (
-				E6497CBB25FA7EAC004AFD12 /* UIViewNibLoadable.swift */,
-				E6497CB425FA7E80004AFD12 /* CircularTimer.swift */,
+				B480597D2632EF8000BCF9AB /* README_sdk_users.md */,
+				B48059802632F1F900BCF9AB /* README_challengeReviewers.md */,
+				B4258E15263194610017ED37 /* BuffSDK.swift */,
+				B4258E38263194620017ED37 /* API */,
+				B4258E16263194610017ED37 /* Misc */,
+				B4258E2B263194620017ED37 /* Model */,
+				B4258E1A263194620017ED37 /* UI */,
+				B4258E3F263194620017ED37 /* Info.plist */,
 			);
-			path = "Custom UI Elements";
+			path = BuffSDK;
 			sourceTree = "<group>";
 		};
-		E6497CC425FA7EE1004AFD12 /* Extensions */ = {
+		B4258E16263194610017ED37 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				E6497CD325FA7FFE004AFD12 /* UIView+Extensions.swift */,
-				E6497CBF25FA7ECF004AFD12 /* Bundle+Extensions.swift */,
+				B4258E17263194610017ED37 /* BuffSDK.h */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		B4258E1A263194620017ED37 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E19263194620017ED37 /* Assets.xcassets */,
+				B4258E1B263194620017ED37 /* UIKIt */,
+				B4258E25263194620017ED37 /* SwiftUI */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B4258E1B263194620017ED37 /* UIKIt */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E22263194620017ED37 /* UIViewNibLoadable.swift */,
+				B4EA9C272632B67C00DF1DF0 /* Cells */,
+				B4258E1C263194620017ED37 /* Extensions */,
+				B4258E20263194620017ED37 /* Views */,
+			);
+			path = UIKIt;
+			sourceTree = "<group>";
+		};
+		B4258E1C263194620017ED37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E1D263194620017ED37 /* UIView+Extensions.swift */,
+				B4258E1E263194620017ED37 /* UIView+QuizShowable.swift */,
+				B48059772632EE9000BCF9AB /* UIViewController+QuizShowable.swift */,
+				B4258E1F263194620017ED37 /* Bundle+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4258E20263194620017ED37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E21263194620017ED37 /* BuffView.swift */,
+				B4258E23263194620017ED37 /* BuffView.xib */,
+				B4258E24263194620017ED37 /* CircularTimer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4258E25263194620017ED37 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E26263194620017ED37 /* Extensions */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		B4258E26263194620017ED37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E27263194620017ED37 /* View+Quizzable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4258E2B263194620017ED37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E2D263194620017ED37 /* Author.swift */,
+				B4258E2E263194620017ED37 /* Image.swift */,
+				B4258E2F263194620017ED37 /* Question.swift */,
+				B4258E31263194620017ED37 /* BuffDelegate.swift */,
+				B4258E32263194620017ED37 /* ModelConstants.swift */,
+				B4258E33263194620017ED37 /* Buffable.swift */,
+				B4258E34263194620017ED37 /* Answer.swift */,
+				B4258E35263194620017ED37 /* BuffStartingResults.swift */,
+				B4258E36263194620017ED37 /* Quiz.swift */,
+				B4258E37263194620017ED37 /* FetchingError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4258E38263194620017ED37 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E39263194620017ED37 /* APIConstants.swift */,
+				B4258E7526319F690017ED37 /* Endpoints */,
+				B4258E3A263194620017ED37 /* Fetchers */,
+				B4258E3D263194620017ED37 /* Responses */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B4258E3A263194620017ED37 /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E3B263194620017ED37 /* QuizFetcher.swift */,
+				B4258E3C263194620017ED37 /* Fetcher.swift */,
+			);
+			path = Fetchers;
+			sourceTree = "<group>";
+		};
+		B4258E3D263194620017ED37 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E6D263198280017ED37 /* BuffResponse.swift */,
+				B4258E3E263194620017ED37 /* ResponseValidator.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		B4258E7526319F690017ED37 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				B4258E7826319F690017ED37 /* CatBreedsEndpoint.swift */,
+				B4258E7926319F690017ED37 /* Endpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		B4EA9C272632B67C00DF1DF0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B4EA9C212632B67400DF1DF0 /* AnswerTableViewCell.swift */,
+				B4EA9C3A2632D83700DF1DF0 /* AnswerTableViewCell.xib */,
+				B4EA9C1B2632B65900DF1DF0 /* AuthorTableViewCell.swift */,
+				B4EA9C1C2632B65900DF1DF0 /* AuthorTableViewCell.xib */,
+				B4EA9C152632B48000DF1DF0 /* QuestionTableViewCell.swift */,
+				B4EA9C162632B48000DF1DF0 /* QuestionTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E6652CB12384247B00A1BF6D = {
 			isa = PBXGroup;
 			children = (
-				E6652CBD2384247B00A1BF6D /* BuffSDK */,
+				B4258E14263194610017ED37 /* BuffSDK */,
 				E6652CC82384247B00A1BF6D /* BuffSDKTests */,
 				E6652CBC2384247B00A1BF6D /* Products */,
 			);
@@ -104,45 +288,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E6652CBD2384247B00A1BF6D /* BuffSDK */ = {
-			isa = PBXGroup;
-			children = (
-				E6EA7E1D23C645650052E901 /* Assets */,
-				E6B118D223BE5B50004C354F /* UI */,
-				E6497CC425FA7EE1004AFD12 /* Extensions */,
-				E6652CBE2384247B00A1BF6D /* BuffSDK.h */,
-				E617E33123AA9C5400BB7970 /* BuffSDK.swift */,
-				E6652CBF2384247B00A1BF6D /* Info.plist */,
-			);
-			path = BuffSDK;
-			sourceTree = "<group>";
-		};
 		E6652CC82384247B00A1BF6D /* BuffSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				E6652CC92384247B00A1BF6D /* BuffSDKTests.swift */,
+				B475B049262F77000047C8CC /* BuffsEndpointTests.swift */,
+				B427372C26301126003D443A /* ResponseValidatorTests.swift */,
 				E6652CCB2384247B00A1BF6D /* Info.plist */,
 			);
 			path = BuffSDKTests;
-			sourceTree = "<group>";
-		};
-		E6B118D223BE5B50004C354F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				E6497CB825FA7E84004AFD12 /* Custom UI Elements */,
-				E66941BF249123810092ED98 /* BuffView.swift */,
-				E66941C12491238E0092ED98 /* BuffView.xib */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		E6EA7E1D23C645650052E901 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				E6EA7E1E23C645790052E901 /* Assets.xcassets */,
-				E69E063E23CA3706007D3C2A /* Buff.storyboard */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +305,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6652CCC2384247B00A1BF6D /* BuffSDK.h in Headers */,
+				B4258E41263194620017ED37 /* BuffSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +398,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6EA7E1F23C645790052E901 /* Assets.xcassets in Resources */,
-				E69E063F23CA3706007D3C2A /* Buff.storyboard in Resources */,
-				E66941C22491238E0092ED98 /* BuffView.xib in Resources */,
+				B4EA9C182632B48000DF1DF0 /* QuestionTableViewCell.xib in Resources */,
+				B4EA9C1E2632B65900DF1DF0 /* AuthorTableViewCell.xib in Resources */,
+				B4EA9C3B2632D83700DF1DF0 /* AnswerTableViewCell.xib in Resources */,
+				B42AEB982631BA7B00FC88DD /* BuffView.xib in Resources */,
+				B4EA9C302632D15D00DF1DF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +441,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6497CD425FA7FFE004AFD12 /* UIView+Extensions.swift in Sources */,
-				E6497CBC25FA7EAC004AFD12 /* UIViewNibLoadable.swift in Sources */,
-				E6497CC025FA7ECF004AFD12 /* Bundle+Extensions.swift in Sources */,
-				E6497CB525FA7E80004AFD12 /* CircularTimer.swift in Sources */,
-				E66941C0249123810092ED98 /* BuffView.swift in Sources */,
-				E617E33223AA9C5400BB7970 /* BuffSDK.swift in Sources */,
+				B4258E49263194620017ED37 /* CircularTimer.swift in Sources */,
+				B4258E58263194620017ED37 /* APIConstants.swift in Sources */,
+				B4258E4E263194620017ED37 /* Image.swift in Sources */,
+				B4258E44263194620017ED37 /* UIView+QuizShowable.swift in Sources */,
+				B48059782632EE9000BCF9AB /* UIViewController+QuizShowable.swift in Sources */,
+				B4EA9C232632B67400DF1DF0 /* AnswerTableViewCell.swift in Sources */,
+				B4258E55263194620017ED37 /* BuffStartingResults.swift in Sources */,
+				B4258E54263194620017ED37 /* Answer.swift in Sources */,
+				B4EA9C172632B48000DF1DF0 /* QuestionTableViewCell.swift in Sources */,
+				B4258E59263194620017ED37 /* QuizFetcher.swift in Sources */,
+				B4258E43263194620017ED37 /* UIView+Extensions.swift in Sources */,
+				B4258E57263194620017ED37 /* FetchingError.swift in Sources */,
+				B4EA9C1D2632B65900DF1DF0 /* AuthorTableViewCell.swift in Sources */,
+				B4258E56263194620017ED37 /* Quiz.swift in Sources */,
+				B4258E53263194620017ED37 /* Buffable.swift in Sources */,
+				B4258E47263194620017ED37 /* UIViewNibLoadable.swift in Sources */,
+				B4258E7D26319F690017ED37 /* Endpoint.swift in Sources */,
+				B4258E46263194620017ED37 /* BuffView.swift in Sources */,
+				B4258E7C26319F690017ED37 /* CatBreedsEndpoint.swift in Sources */,
+				B4258E4F263194620017ED37 /* Question.swift in Sources */,
+				B4258E5A263194620017ED37 /* Fetcher.swift in Sources */,
+				B4258E4D263194620017ED37 /* Author.swift in Sources */,
+				B4258E40263194620017ED37 /* BuffSDK.swift in Sources */,
+				B4258E5B263194620017ED37 /* ResponseValidator.swift in Sources */,
+				B4258E51263194620017ED37 /* BuffDelegate.swift in Sources */,
+				B4258E52263194620017ED37 /* ModelConstants.swift in Sources */,
+				B4258E6E263198280017ED37 /* BuffResponse.swift in Sources */,
+				B4258E45263194620017ED37 /* Bundle+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +476,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6652CCA2384247B00A1BF6D /* BuffSDKTests.swift in Sources */,
+				B475B04A262F77000047C8CC /* BuffsEndpointTests.swift in Sources */,
+				B427372D26301126003D443A /* ResponseValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +634,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BuffSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +665,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BuffSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

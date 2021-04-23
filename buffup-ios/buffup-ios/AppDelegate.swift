@@ -17,12 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         setupBuffSDK()
+                
         return true
     }
 }
 
 extension AppDelegate {
     private func setupBuffSDK() {
-        //TODO: Add your SDK initialization logic here if needed
+        BuffSDK.initialise()
     }
 }

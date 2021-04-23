@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AuthorTableViewCell" customModule="BuffSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authorBox" translatesAutoresizingMaskIntoConstraints="NO" id="eph-Dc-ciz">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="44"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pfM-EZ-CNI">
+                        <rect key="frame" x="8" y="3" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="DhN-3D-fyN"/>
+                            <constraint firstAttribute="width" secondItem="pfM-EZ-CNI" secondAttribute="height" multiplier="1:1" id="nvL-Dc-SHg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3F-qt-H8e">
+                        <rect key="frame" x="46" y="18" width="165" height="0.0"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="T3F-qt-H8e" firstAttribute="centerY" secondItem="pfM-EZ-CNI" secondAttribute="centerY" id="0Hs-3L-mgM"/>
+                    <constraint firstItem="T3F-qt-H8e" firstAttribute="trailing" secondItem="eph-Dc-ciz" secondAttribute="trailing" id="2dX-sE-wIn"/>
+                    <constraint firstItem="pfM-EZ-CNI" firstAttribute="leading" secondItem="eph-Dc-ciz" secondAttribute="leading" constant="8" id="B9C-Ny-jhO"/>
+                    <constraint firstItem="pfM-EZ-CNI" firstAttribute="centerY" secondItem="eph-Dc-ciz" secondAttribute="centerY" constant="-4" id="EQe-yf-hby"/>
+                    <constraint firstItem="eph-Dc-ciz" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="TKr-k3-P4y"/>
+                    <constraint firstItem="eph-Dc-ciz" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.66" id="VOs-Wo-gs5"/>
+                    <constraint firstItem="eph-Dc-ciz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Wrw-1J-llc"/>
+                    <constraint firstItem="T3F-qt-H8e" firstAttribute="leading" secondItem="pfM-EZ-CNI" secondAttribute="trailing" constant="8" id="luj-pJ-lv5"/>
+                    <constraint firstItem="eph-Dc-ciz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vrc-n4-H7l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageViewAuthor" destination="pfM-EZ-CNI" id="q5P-64-CH4"/>
+                <outlet property="labelFullName" destination="T3F-qt-H8e" id="lAV-OS-h9i"/>
+            </connections>
+            <point key="canvasLocation" x="-221.73913043478262" y="68.303571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="authorBox" width="133" height="39"/>
+    </resources>
+</document>

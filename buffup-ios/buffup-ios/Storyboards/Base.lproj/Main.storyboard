@@ -132,8 +132,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uce-b5-IQg" customClass="BuffView" customModule="Buff_Up">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uce-b5-IQg">
+                                <rect key="frame" x="0.0" y="250" width="428" height="642"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swH-kd-a60">
@@ -157,22 +157,23 @@
                         <viewLayoutGuide key="safeArea" id="Rsl-T3-J9Y"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Uce-b5-IQg" firstAttribute="top" secondItem="Rsl-T3-J9Y" secondAttribute="top" id="54g-TX-uTf"/>
                             <constraint firstItem="swH-kd-a60" firstAttribute="leading" secondItem="Rsl-T3-J9Y" secondAttribute="leading" id="WPo-YR-xIn"/>
-                            <constraint firstItem="Uce-b5-IQg" firstAttribute="trailing" secondItem="Rsl-T3-J9Y" secondAttribute="trailing" id="cXC-I0-G5b"/>
+                            <constraint firstItem="Uce-b5-IQg" firstAttribute="width" secondItem="Rsl-T3-J9Y" secondAttribute="width" multiplier="1:4" id="Zvr-An-jrs"/>
+                            <constraint firstItem="Uce-b5-IQg" firstAttribute="height" secondItem="Rsl-T3-J9Y" secondAttribute="height" multiplier="2:3" id="frf-pm-eQR"/>
                             <constraint firstItem="Uce-b5-IQg" firstAttribute="bottom" secondItem="Rsl-T3-J9Y" secondAttribute="bottom" id="gKl-ff-Opm"/>
-                            <constraint firstItem="Rsl-T3-J9Y" firstAttribute="leading" secondItem="Uce-b5-IQg" secondAttribute="leading" id="hKt-qn-vdu"/>
+                            <constraint firstItem="Uce-b5-IQg" firstAttribute="leading" secondItem="Rsl-T3-J9Y" secondAttribute="leading" id="mbv-7K-e4c"/>
                             <constraint firstItem="swH-kd-a60" firstAttribute="top" secondItem="Rsl-T3-J9Y" secondAttribute="top" constant="15" id="wGh-ug-JCf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gBZ-SO-BVj"/>
                     <connections>
+                        <outlet property="buffView" destination="Uce-b5-IQg" id="ahd-To-2qL"/>
                         <outlet property="exitButton" destination="swH-kd-a60" id="XDQ-HU-H3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSd-bB-Wks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234.55723542116633" y="-12.616822429906541"/>
+            <point key="canvasLocation" x="-235.51401869158877" y="-12.958963282937367"/>
         </scene>
     </scenes>
     <resources>

@@ -14,7 +14,6 @@
 		E6849C2423322C0200D191A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6849C2223322C0200D191A9 /* Main.storyboard */; };
 		E6849C2623322C0400D191A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6849C2523322C0400D191A9 /* Assets.xcassets */; };
 		E6849C2923322C0400D191A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6849C2723322C0400D191A9 /* LaunchScreen.storyboard */; };
-		E6849C3423322C0400D191A9 /* buffup_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6849C3323322C0400D191A9 /* buffup_iosTests.swift */; };
 		E6849C3F23322C0400D191A9 /* buffup_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6849C3E23322C0400D191A9 /* buffup_iosUITests.swift */; };
 		E6B4095623CE2B2600EEE71F /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B4095523CE2B2600EEE71F /* StreamViewController.swift */; };
 		E6F49A9925FA685A006C773E /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F49A9825FA685A006C773E /* LandscapeViewController.swift */; };
@@ -35,13 +34,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = E6652CC42384247B00A1BF6D;
 			remoteInfo = BuffSDKTests;
-		};
-		E6849C3023322C0400D191A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6849C1323322C0200D191A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6849C1A23322C0200D191A9;
-			remoteInfo = "buffup-ios";
 		};
 		E6849C3B23322C0400D191A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -75,9 +67,6 @@
 		E6849C2523322C0400D191A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6849C2823322C0400D191A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6849C2A23322C0400D191A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6849C2F23322C0400D191A9 /* buffup-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "buffup-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6849C3323322C0400D191A9 /* buffup_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buffup_iosTests.swift; sourceTree = "<group>"; };
-		E6849C3523322C0400D191A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6849C3A23322C0400D191A9 /* buffup-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "buffup-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6849C3E23322C0400D191A9 /* buffup_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buffup_iosUITests.swift; sourceTree = "<group>"; };
 		E6849C4023322C0400D191A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,13 +82,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6497CCF25FA7FBA004AFD12 /* BuffSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6849C2C23322C0400D191A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +116,6 @@
 			children = (
 				E6497CA225FA7DB9004AFD12 /* BuffSDK.xcodeproj */,
 				E6849C1D23322C0200D191A9 /* buffup-ios */,
-				E6849C3223322C0400D191A9 /* buffup-iosTests */,
 				E6849C3D23322C0400D191A9 /* buffup-iosUITests */,
 				E6849C1C23322C0200D191A9 /* Products */,
 				E6497CCE25FA7FBA004AFD12 /* Frameworks */,
@@ -145,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				E6849C1B23322C0200D191A9 /* Buff Up.app */,
-				E6849C2F23322C0400D191A9 /* buffup-iosTests.xctest */,
 				E6849C3A23322C0400D191A9 /* buffup-iosUITests.xctest */,
 			);
 			name = Products;
@@ -162,15 +142,6 @@
 				E6849C2A23322C0400D191A9 /* Info.plist */,
 			);
 			path = "buffup-ios";
-			sourceTree = "<group>";
-		};
-		E6849C3223322C0400D191A9 /* buffup-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				E6849C3323322C0400D191A9 /* buffup_iosTests.swift */,
-				E6849C3523322C0400D191A9 /* Info.plist */,
-			);
-			path = "buffup-iosTests";
 			sourceTree = "<group>";
 		};
 		E6849C3D23322C0400D191A9 /* buffup-iosUITests */ = {
@@ -239,24 +210,6 @@
 			productReference = E6849C1B23322C0200D191A9 /* Buff Up.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E6849C2E23322C0400D191A9 /* buffup-iosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6849C4623322C0400D191A9 /* Build configuration list for PBXNativeTarget "buffup-iosTests" */;
-			buildPhases = (
-				E6849C2B23322C0400D191A9 /* Sources */,
-				E6849C2C23322C0400D191A9 /* Frameworks */,
-				E6849C2D23322C0400D191A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E6849C3123322C0400D191A9 /* PBXTargetDependency */,
-			);
-			name = "buffup-iosTests";
-			productName = "buffup-iosTests";
-			productReference = E6849C2F23322C0400D191A9 /* buffup-iosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E6849C3923322C0400D191A9 /* buffup-iosUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6849C4923322C0400D191A9 /* Build configuration list for PBXNativeTarget "buffup-iosUITests" */;
@@ -288,10 +241,6 @@
 					E6849C1A23322C0200D191A9 = {
 						CreatedOnToolsVersion = 10.3;
 					};
-					E6849C2E23322C0400D191A9 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = E6849C1A23322C0200D191A9;
-					};
 					E6849C3923322C0400D191A9 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = E6849C1A23322C0200D191A9;
@@ -318,7 +267,6 @@
 			projectRoot = "";
 			targets = (
 				E6849C1A23322C0200D191A9 /* buffup-ios */,
-				E6849C2E23322C0400D191A9 /* buffup-iosTests */,
 				E6849C3923322C0400D191A9 /* buffup-iosUITests */,
 			);
 		};
@@ -352,13 +300,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6849C2D23322C0400D191A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6849C3823322C0400D191A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,14 +322,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6849C2B23322C0400D191A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6849C3423322C0400D191A9 /* buffup_iosTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6849C3623322C0400D191A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,11 +333,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6849C3123322C0400D191A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E6849C1A23322C0200D191A9 /* buffup-ios */;
-			targetProxy = E6849C3023322C0400D191A9 /* PBXContainerItemProxy */;
-		};
 		E6849C3C23322C0400D191A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E6849C1A23322C0200D191A9 /* buffup-ios */;
@@ -564,7 +492,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "buffup-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +518,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "buffup-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,48 +527,6 @@
 				PRODUCT_NAME = "Buff Up";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E6849C4723322C0400D191A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZJ696D3ZA;
-				INFOPLIST_FILE = "buffup-iosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.buffup.buffup-iosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/buffup-ios.app/buffup-ios";
-			};
-			name = Debug;
-		};
-		E6849C4823322C0400D191A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZJ696D3ZA;
-				INFOPLIST_FILE = "buffup-iosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.buffup.buffup-iosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/buffup-ios.app/buffup-ios";
 			};
 			name = Release;
 		};
@@ -701,15 +587,6 @@
 			buildConfigurations = (
 				E6849C4423322C0400D191A9 /* Debug */,
 				E6849C4523322C0400D191A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E6849C4623322C0400D191A9 /* Build configuration list for PBXNativeTarget "buffup-iosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6849C4723322C0400D191A9 /* Debug */,
-				E6849C4823322C0400D191A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
