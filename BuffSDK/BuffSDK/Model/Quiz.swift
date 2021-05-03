@@ -40,7 +40,8 @@ final class Quiz {
                   createdAt: result.created_at,
                   language: result.language,
                   author: Author(author: result.author),
-                  question: Question(question: result.question),
+                  question: Question(question: result.question,
+                                     timeToShow: result.time_to_show),
                   answers: result.answers.map {Answer(answer: $0)})
     }
 }

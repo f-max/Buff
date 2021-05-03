@@ -10,6 +10,7 @@ import UIKit
 class QuestionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var circularTimer: CircularTimer!
+    @IBOutlet weak var textViewQuestion: UITextView!
     
     var question: Question? {
         didSet {
@@ -19,7 +20,13 @@ class QuestionTableViewCell: UITableViewCell {
         }
     }
     
-    private func configure(question: Question) {
-        textLabel?.text = question.title
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        contentView.layer.cornerRadius = 16
     }
-}
+    
+    private func configure(question: Question) {
+        textViewQuestion?.text = question.title
+        circularTimer.startTimer(TimeInterval(question.timeToShow))
+    }
+}     

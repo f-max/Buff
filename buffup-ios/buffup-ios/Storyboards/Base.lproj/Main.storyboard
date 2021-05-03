@@ -158,10 +158,10 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="swH-kd-a60" firstAttribute="leading" secondItem="Rsl-T3-J9Y" secondAttribute="leading" id="WPo-YR-xIn"/>
-                            <constraint firstItem="Uce-b5-IQg" firstAttribute="width" secondItem="Rsl-T3-J9Y" secondAttribute="width" multiplier="1:4" id="Zvr-An-jrs"/>
+                            <constraint firstItem="Uce-b5-IQg" firstAttribute="width" secondItem="Rsl-T3-J9Y" secondAttribute="width" multiplier="1:3" id="Zvr-An-jrs"/>
                             <constraint firstItem="Uce-b5-IQg" firstAttribute="height" secondItem="Rsl-T3-J9Y" secondAttribute="height" multiplier="2:3" id="frf-pm-eQR"/>
                             <constraint firstItem="Uce-b5-IQg" firstAttribute="bottom" secondItem="Rsl-T3-J9Y" secondAttribute="bottom" id="gKl-ff-Opm"/>
-                            <constraint firstItem="Uce-b5-IQg" firstAttribute="leading" secondItem="Rsl-T3-J9Y" secondAttribute="leading" id="mbv-7K-e4c"/>
+                            <constraint firstItem="Uce-b5-IQg" firstAttribute="leading" secondItem="Rsl-T3-J9Y" secondAttribute="leading" constant="60" id="mbv-7K-e4c"/>
                             <constraint firstItem="swH-kd-a60" firstAttribute="top" secondItem="Rsl-T3-J9Y" secondAttribute="top" constant="15" id="wGh-ug-JCf"/>
                         </constraints>
                     </view>

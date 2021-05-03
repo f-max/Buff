@@ -205,16 +205,16 @@
 		B4258E2B263194620017ED37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B4258E2D263194620017ED37 /* Author.swift */,
-				B4258E2E263194620017ED37 /* Image.swift */,
-				B4258E2F263194620017ED37 /* Question.swift */,
-				B4258E31263194620017ED37 /* BuffDelegate.swift */,
-				B4258E32263194620017ED37 /* ModelConstants.swift */,
-				B4258E33263194620017ED37 /* Buffable.swift */,
 				B4258E34263194620017ED37 /* Answer.swift */,
+				B4258E2D263194620017ED37 /* Author.swift */,
+				B4258E33263194620017ED37 /* Buffable.swift */,
+				B4258E31263194620017ED37 /* BuffDelegate.swift */,
 				B4258E35263194620017ED37 /* BuffStartingResults.swift */,
-				B4258E36263194620017ED37 /* Quiz.swift */,
 				B4258E37263194620017ED37 /* FetchingError.swift */,
+				B4258E2E263194620017ED37 /* Image.swift */,
+				B4258E32263194620017ED37 /* ModelConstants.swift */,
+				B4258E2F263194620017ED37 /* Question.swift */,
+				B4258E36263194620017ED37 /* Quiz.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

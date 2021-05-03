@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,16 +20,21 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authorBox" translatesAutoresizingMaskIntoConstraints="NO" id="eph-Dc-ciz">
                         <rect key="frame" x="0.0" y="0.0" width="211" height="44"/>
+                        <color key="tintColor" systemColor="systemGray6Color"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZI-xQ-NlX">
+                        <rect key="frame" x="7" y="4" width="28" height="28"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pfM-EZ-CNI">
-                        <rect key="frame" x="8" y="3" width="30" height="30"/>
+                        <rect key="frame" x="8" y="5" width="26" height="26"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="30" id="DhN-3D-fyN"/>
+                            <constraint firstAttribute="width" constant="26" id="DhN-3D-fyN"/>
                             <constraint firstAttribute="width" secondItem="pfM-EZ-CNI" secondAttribute="height" multiplier="1:1" id="nvL-Dc-SHg"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3F-qt-H8e">
-                        <rect key="frame" x="46" y="18" width="165" height="0.0"/>
+                        <rect key="frame" x="42" y="18" width="169" height="0.0"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -39,12 +45,16 @@
                     <constraint firstItem="T3F-qt-H8e" firstAttribute="centerY" secondItem="pfM-EZ-CNI" secondAttribute="centerY" id="0Hs-3L-mgM"/>
                     <constraint firstItem="T3F-qt-H8e" firstAttribute="trailing" secondItem="eph-Dc-ciz" secondAttribute="trailing" id="2dX-sE-wIn"/>
                     <constraint firstItem="pfM-EZ-CNI" firstAttribute="leading" secondItem="eph-Dc-ciz" secondAttribute="leading" constant="8" id="B9C-Ny-jhO"/>
+                    <constraint firstItem="9ZI-xQ-NlX" firstAttribute="width" secondItem="pfM-EZ-CNI" secondAttribute="width" constant="2" id="C2F-hZ-iBg"/>
+                    <constraint firstItem="9ZI-xQ-NlX" firstAttribute="centerY" secondItem="pfM-EZ-CNI" secondAttribute="centerY" id="DMT-Ho-3ws"/>
                     <constraint firstItem="pfM-EZ-CNI" firstAttribute="centerY" secondItem="eph-Dc-ciz" secondAttribute="centerY" constant="-4" id="EQe-yf-hby"/>
                     <constraint firstItem="eph-Dc-ciz" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="TKr-k3-P4y"/>
                     <constraint firstItem="eph-Dc-ciz" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.66" id="VOs-Wo-gs5"/>
+                    <constraint firstItem="9ZI-xQ-NlX" firstAttribute="height" secondItem="pfM-EZ-CNI" secondAttribute="height" constant="2" id="Wfo-rP-rRC"/>
                     <constraint firstItem="eph-Dc-ciz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Wrw-1J-llc"/>
                     <constraint firstItem="T3F-qt-H8e" firstAttribute="leading" secondItem="pfM-EZ-CNI" secondAttribute="trailing" constant="8" id="luj-pJ-lv5"/>
                     <constraint firstItem="eph-Dc-ciz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vrc-n4-H7l"/>
+                    <constraint firstItem="9ZI-xQ-NlX" firstAttribute="centerX" secondItem="pfM-EZ-CNI" secondAttribute="centerX" id="z65-yc-MJY"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -52,11 +62,18 @@
             <connections>
                 <outlet property="imageViewAuthor" destination="pfM-EZ-CNI" id="q5P-64-CH4"/>
                 <outlet property="labelFullName" destination="T3F-qt-H8e" id="lAV-OS-h9i"/>
+                <outlet property="viewAuthorHolder" destination="9ZI-xQ-NlX" id="01A-0I-7LM"/>
             </connections>
             <point key="canvasLocation" x="-221.73913043478262" y="68.303571428571431"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="authorBox" width="133" height="39"/>
+        <image name="authorBox" width="33" height="39"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

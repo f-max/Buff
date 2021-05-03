@@ -17,24 +17,37 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7F-Y1-6jd" customClass="CircularTimer" customModule="BuffSDK" customModuleProvider="target">
-                        <rect key="frame" x="272" y="2" width="40" height="40"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ts-Xl-IPB">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhR-Ji-bh9" customClass="CircularTimer" customModule="BuffSDK" customModuleProvider="target">
+                        <rect key="frame" x="284" y="6" width="30" height="30"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="JuN-p9-zxc"/>
-                            <constraint firstAttribute="width" constant="40" id="xuj-0B-Zgp"/>
+                            <constraint firstAttribute="width" constant="30" id="DNS-Ju-fpe"/>
+                            <constraint firstAttribute="height" constant="30" id="fch-cL-tJY"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.25" alpha="0.75496688741721851" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="a7F-Y1-6jd" secondAttribute="trailing" constant="8" id="b6L-gG-5AS"/>
-                    <constraint firstItem="a7F-Y1-6jd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h5l-et-4N7"/>
+                    <constraint firstAttribute="bottom" secondItem="1Ts-Xl-IPB" secondAttribute="bottom" id="32V-t2-rCF"/>
+                    <constraint firstItem="1Ts-Xl-IPB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6tA-k9-TUY"/>
+                    <constraint firstItem="XhR-Ji-bh9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="LvV-8O-kiV"/>
+                    <constraint firstAttribute="trailing" secondItem="XhR-Ji-bh9" secondAttribute="trailing" constant="6" id="Mhf-xO-xaY"/>
+                    <constraint firstItem="XhR-Ji-bh9" firstAttribute="leading" secondItem="1Ts-Xl-IPB" secondAttribute="trailing" constant="8" id="Z4n-Kp-2fx"/>
+                    <constraint firstItem="1Ts-Xl-IPB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sDN-tf-Xyr"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="circularTimer" destination="a7F-Y1-6jd" id="6D9-WR-yd0"/>
+                <outlet property="circularTimer" destination="XhR-Ji-bh9" id="FYc-wW-TlJ"/>
+                <outlet property="textViewQuestion" destination="1Ts-Xl-IPB" id="wHF-61-mP8"/>
             </connections>
             <point key="canvasLocation" x="9" y="71"/>
         </tableViewCell>
